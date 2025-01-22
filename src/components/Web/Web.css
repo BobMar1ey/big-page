@@ -1,0 +1,82 @@
+.web {
+    padding-top: 78px;
+}
+.web__container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.web__top-row {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+.web__top-link {
+}
+.web__top-img {
+}
+ .web__bottom-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.web__botttom-item {
+    width: 445px;
+    height: 310px;
+    padding: 48px;
+    background-color: rgba(218, 197, 167, 0.05);
+    border-bottom: 1px solid rgba(218, 197, 167, 0.15);
+    border-left: 1px solid rgba(218, 197, 167, 0.15);
+    border-radius: 2px;
+}
+.web__bottom-number {
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Satoshi";
+}
+.web__bottom-title {
+    text-transform: uppercase;
+    font-family: "Satoshi";
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.web__bottom-text {
+    font-family: "Chillax";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    margin-bottom: 32px;
+}
+.web__bottom-button {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Satoshi";
+    letter-spacing: 1.5px;
+    position: relative;
+    padding-left: 40px;
+
+}
+.web__bottom-button:hover:before{
+    transform: rotate(45deg);
+
+}
+.web__bottom-button::before{
+    transition: .5s ease-in-out all;
+    content: url(../../img/web/btn.png);
+    position: absolute;
+    top: -7px;
+    left: -2px;
+}

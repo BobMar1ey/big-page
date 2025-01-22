@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(./satoshi/Satoshi-Italic.woff2);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url(./satoshi/Satoshi-Light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url(./satoshi/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url(./satoshi/Satoshi-Medium.woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url(./satoshi/Satoshi-Bold.woff2);
+    font-weight: 700;
+}
+
+/* =======================chillax */
+@font-face {
+    font-family: "Chillax";
+    src: url(./chillax/Chillax-Light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Chillax";
+    src: url(./chillax/Chillax-Regular.woff2);
+    font-weight: 400;
+}
+/* ========================================gambetta */
+@font-face {
+    font-family: "Gambetta";
+    src: url(./gambetta/Gambetta-LightItalic.woff2);
+    font-weight: 300;
+}
+/* ============================================inter */
+@font-face {
+    font-family: "Inter";
+    src: url(./inter/Inter-Light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./inter/InterDisplay-Regular.woff2);
+    font-weight: 400;
+}
