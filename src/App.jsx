@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
 import Marquee from "./components/Marquee/Marquee";
 import Footer from "./components/Footer/Footer";
+import HireUs from "./components/HireUs/HireUs";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Marquee />
         <Footer />
       </main>
+      <HireUs />
     </div>
   );
 }

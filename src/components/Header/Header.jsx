@@ -3,9 +3,9 @@ import "./Header.css";
 import Logo from "../../img/header/logo.png";
 
 const NAV_LINKS = [
+  { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
   { href: "#blog", label: "Blog" },
 ];
 

@@ -15,7 +15,7 @@ const services = [
     number: "01",
     title: "Web design",
     text: "Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.",
-    link: "About Webdesign",
+    link: "About Web Design",
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ const services = [
     number: "03",
     title: "Content & Seo",
     text: "Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.",
-    link: "About SEO",
+    link: "About Content & Seo",
   },
 ];
 
