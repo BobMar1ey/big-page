@@ -1,0 +1,177 @@
+@import url(./fonts/fonts.css);
+
+:root {
+  --gold: #dac5a7;
+  --gold-05: rgba(218, 197, 167, 0.05);
+  --gold-10: rgba(218, 197, 167, 0.1);
+  --gold-15: rgba(218, 197, 167, 0.15);
+  --gold-40: rgba(218, 197, 167, 0.4);
+  --bg: #040000;
+  --ink: #0e0e0e;
+  --container: 1640px;
+  --pad-x: clamp(16px, 7.5vw, 120px);
+  --pad-y: clamp(64px, 10vw, 150px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Satoshi", sans-serif;
+  box-sizing: border-box;
+  color: var(--gold);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active,
+textarea:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+[class$="__container"]:not(.header__container) {
+  max-width: var(--container);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--pad-y) var(--pad-x);
+  background-color: var(--bg);
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body.is-locked {
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App {
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: var(--container);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+section,
+footer {
+  scroll-margin-top: 96px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

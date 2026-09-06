@@ -1,0 +1,148 @@
+.web {
+  padding-top: 78px;
+}
+
+.web__container {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.web__marquee {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  margin-bottom: 80px;
+}
+
+.web__top-row {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  animation: logosSlide 28s linear infinite;
+}
+
+.web__top-img {
+  height: 28px;
+  width: auto;
+  opacity: 0.85;
+  filter: grayscale(0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.web__top-link:hover .web__top-img {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+.web__bottom-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.web__botttom-item {
+  width: 100%;
+  min-height: 310px;
+  padding: 48px;
+  background-color: var(--gold-05);
+  border-bottom: 1px solid var(--gold-15);
+  border-left: 1px solid var(--gold-15);
+  border-radius: 2px;
+  transition: transform 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+}
+
+.web__botttom-item:hover {
+  transform: translateY(-8px);
+  background-color: var(--gold-10);
+  border-color: var(--gold-40);
+}
+
+.web__bottom-number {
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Satoshi";
+}
+
+.web__bottom-title {
+  text-transform: uppercase;
+  font-family: "Satoshi";
+  font-size: clamp(20px, 2vw, 24px);
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.web__bottom-text {
+  font-family: "Chillax";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  margin-bottom: 32px;
+}
+
+.web__bottom-button {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Satoshi";
+  letter-spacing: 1.5px;
+  position: relative;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.web__bottom-button:hover::before {
+  transform: rotate(45deg);
+}
+
+.web__bottom-button::before {
+  transition: 0.5s ease-in-out all;
+  content: url(../../img/web/btn.png);
+  position: absolute;
+  top: -7px;
+  left: -2px;
+}
+
+@keyframes logosSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .web__bottom-row {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+  }
+
+  .web__botttom-item {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .web {
+    padding-top: 40px;
+  }
+
+  .web__marquee {
+    margin-bottom: 48px;
+  }
+
+  .web__top-row {
+    gap: 40px;
+  }
+
+  .web__botttom-item {
+    padding: 28px 20px;
+  }
+}

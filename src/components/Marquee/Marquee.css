@@ -1,0 +1,36 @@
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid var(--gold-15);
+  border-bottom: 1px solid var(--gold-15);
+  padding: 18px 0;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 28px;
+  animation: marquee 22s linear infinite;
+}
+
+.marquee__item {
+  font-size: clamp(18px, 2.4vw, 28px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.marquee__plus {
+  opacity: 0.55;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
